@@ -26,13 +26,18 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//aletera uma usuario
+//$usuario = new Usuario();
+//$usuario->loadById(11);
+//$usuario->update("professor", "QAZXSW");
+//echo $usuario;
+
 $usuario = new Usuario();
-
-$usuario->loadById(11);
-
-$usuario->update("professor", "QAZXSW");
-
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
+
+
 
 
 //Select simples
